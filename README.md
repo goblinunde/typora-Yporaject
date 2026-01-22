@@ -1,3 +1,16 @@
+```
+https://github.com/goblinunde/typora-Yporaject.git
+
+sudo rm -rf ./.git/
+
+cd ..
+
+mv typora-Yporaject Yporaject
+cd Yporaject
+```
+
+
+
 ## TYpora 最新版激发教程
 
 > Yporainject（[复制自 NodeInject 项目 Copy from repo NodeInject](https://github.com/DiamondHunters/NodeInject)）
