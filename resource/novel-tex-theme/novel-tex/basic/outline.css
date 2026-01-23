@@ -1,0 +1,81 @@
+/* 正文序号 */
+#write {
+  counter-reset: body-h2;
+}
+
+#write h1 {
+  counter-reset: body-h2 body-h3 body-h4 body-h5 body-h6;
+}
+#write h2 {
+  counter-reset: body-h3 body-h4 body-h5 body-h6;
+}
+#write h3 {
+  counter-reset: body-h4 body-h5 body-h6;
+}
+#write h4 {
+  counter-reset: body-h5 body-h6;
+}
+#write h5 {
+  counter-reset: body-h6;
+}
+
+#write h2:before,
+h2.md-focus.md-heading:before {
+  counter-increment: body-h2;
+  content: counter(body-h2);
+  margin-right: 1.2em;
+}
+
+#write h3:before,
+h3.md-focus.md-heading:before {
+  counter-increment: body-h3;
+  content: counter(body-h2) "." counter(body-h3);
+  margin-right: 1.2em;
+}
+
+#write h4:before,
+h4.md-focus.md-heading:before {
+  counter-increment: body-h4;
+  content: counter(body-h2) "." counter(body-h3) "." counter(body-h4);
+  margin-right: 1.2em;
+}
+
+/* 侧边栏大纲序号 */
+.sidebar-content {
+  counter-reset: outline-h2;
+}
+
+.sidebar-content .outline-h1 {
+  counter-reset: outline-h2 outline-h3 outline-h4 outline-h5 outline-h6;
+}
+
+.sidebar-content .outline-h2 {
+  counter-reset: outline-h3 outline-h4 outline-h5 outline-h6;
+}
+
+.sidebar-content .outline-h3 {
+  counter-reset: outline-h4 outline-h5 outline-h6;
+}
+
+.sidebar-content .outline-h4 {
+  counter-reset: outline-h5 outline-h6;
+}
+
+.sidebar-content .outline-h5 {
+  counter-reset: outline-h6;
+}
+
+.sidebar-content .outline-h2 .outline-label:before {
+  counter-increment: outline-h2;
+  content: counter(outline-h2) " ";
+}
+
+.sidebar-content .outline-h3 .outline-label:before {
+  counter-increment: outline-h3;
+  content: counter(outline-h2) "." counter(outline-h3) " ";
+}
+
+.sidebar-content .outline-h4 .outline-label:before {
+  counter-increment: outline-h4;
+  content: counter(outline-h2) "." counter(outline-h3) "." counter(outline-h4) " ";
+}
